@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Eletronet Socorro" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Mais Velocidade e Mais estabilidade na sua conexão" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Mensalidades que cabem no seu bolso!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Saiba mais em "/>
+                        <Span Text="https://www.eletronetsocorro.com.br" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="ID" x:Name="entId" Keyboard="Numeric" />
+            <Button Text="Localizar" Clicked="Button_Clicked" />
+            <Button Text="Excluir" Clicked="Button_Clicked_2" />
+        </StackLayout>
+    </StackLayout>    
+</ContentPage>
